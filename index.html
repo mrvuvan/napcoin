@@ -74,8 +74,8 @@
       <img id="qrImage" src="" alt="Mã VietQR" class="qr-img">
 
       <div class="info-box">
-        <p style="margin: 0;">Ngân hàng: <span>MBBank</span></p>
-        <p style="margin: 0;">Số tài khoản: <span>0964232891</span></p>
+        <p style="margin: 0;">Ngân hàng: <span>Vietcombank</span></p>
+        <p style="margin: 0;">Số tài khoản: <span>0421000457095</span></p>
         <p style="margin: 0;">Chủ tài khoản: <span>Vu Van Chinh</span></p>
         <p style="margin: 0;">Số tiền: <span id="displayAmount">0</span> VNĐ</p>
         <p style="margin: 0;">Nội dung CK: <span id="displayContent">HN02</span></p>
@@ -100,8 +100,9 @@
       if (!account) return alert('Vui lòng nhập Tài khoản Game (ID)!');
       if (!amount || parseInt(amount) < 10000) return alert('Số tiền tối thiểu là 10,000 VNĐ!');
 
-      const BANK_ID = 'MB';
-      const ACCOUNT_NO = '0964232891';
+      // Cấu hình Vietcombank
+      const BANK_ID = 'VCB';
+      const ACCOUNT_NO = '0421000457095';
       const ACCOUNT_NAME = 'Vu Van Chinh';
       const transferContent = 'HN02 ' + account;
 
